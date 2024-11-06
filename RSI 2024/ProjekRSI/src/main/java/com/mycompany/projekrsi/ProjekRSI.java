@@ -14,6 +14,7 @@ public class ProjekRSI {
         System.out.println("HALLOOO REKKK, CIHUYYYYYYYYYY");        
         System.out.println("hihiii");
         System.out.println("hihiii");
+        System.out.println("hellooo");
         
     }
 }
