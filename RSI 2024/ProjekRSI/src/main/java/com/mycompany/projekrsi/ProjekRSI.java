@@ -11,16 +11,7 @@ package com.mycompany.projekrsi;
 public class ProjekRSI {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        System.out.println("Hello World!");
-        System.out.println("Hello World!");
-        System.out.println("Hello World!");
-        System.out.println("Hello World!");
-        System.out.println("Hello World!");
-        System.out.println("Hello World!");
-        System.out.println("Hello World!");
-        System.out.println("Hello World!");
-        
+        System.out.println("HALLOOO REKKK, CIHUYYYYYYYYYY");        
         System.out.println("hihiii");
     }
 }
