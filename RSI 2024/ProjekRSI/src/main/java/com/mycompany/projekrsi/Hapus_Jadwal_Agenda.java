@@ -78,12 +78,17 @@ public class Hapus_Jadwal_Agenda extends javax.swing.JFrame {
         getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 209, 510, 30));
 
         jButton1.setBackground(new java.awt.Color(0, 51, 51));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jButton1.setText("HAPUS");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 440, 120, -1));
 
         jButton2.setBackground(new java.awt.Color(51, 0, 0));
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jButton2.setText("BATAL");
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 440, 120, -1));
 
@@ -117,6 +122,24 @@ public class Hapus_Jadwal_Agenda extends javax.swing.JFrame {
         String selectedItem = (String) jComboBox2.getSelectedItem();
         JOptionPane.showMessageDialog(this, "Anda memilih pengeluaran: " + selectedItem);
     }//GEN-LAST:event_jComboBox2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        int response = JOptionPane.showConfirmDialog(this,
+                "Apakah Anda ingin menghapus jadwal agenda ini?",
+                "Konfirmasi Hapus",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.WARNING_MESSAGE);
+
+        // Mengecek respon pengguna
+        if (response == JOptionPane.YES_OPTION) {
+            // Lakukan aksi hapus jika pengguna menekan "Yes"
+            JOptionPane.showMessageDialog(this, "Jadwal agenda berhasil dihapus.");
+        } else if (response == JOptionPane.NO_OPTION) {
+            // Jika pengguna menekan "No", tidak ada aksi yang dilakukan
+            JOptionPane.showMessageDialog(this, "Penghapusan dibatalkan.");
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
