@@ -26,17 +26,78 @@ public class Hapus_Jadwal_Agenda extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/projekrsi/Frame Hapus Jadwal Agenda.png"))); // NOI18N
-        jLabel1.setText("jLabel1");
+        jLabel5.setFont(new java.awt.Font("Century Schoolbook", 1, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel5.setText("Tanggal                             : ");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 310, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("Century Schoolbook", 1, 24)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel6.setText("Nama Agenda                  : ");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 210, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("Century Schoolbook", 1, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel7.setText("Waktu                                : ");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 260, -1, -1));
+
+        jTextField1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jTextField1.setText("Waktu");
+        jTextField1.setToolTipText("");
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 260, 510, 30));
+        jTextField1.getAccessibleContext().setAccessibleName("");
+
+        jTextField2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jTextField2.setText("Nama Agenda");
+        jTextField2.setToolTipText("");
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 209, 510, 30));
+
+        jButton1.setBackground(new java.awt.Color(0, 51, 51));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton1.setText("HAPUS");
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 440, 120, -1));
+
+        jButton2.setBackground(new java.awt.Color(51, 0, 0));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton2.setText("BATAL");
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 440, 120, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/Image/Frame Hapus Jadwal Agenda.png"))); // NOI18N
+        jLabel1.setText("Baground");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -75,6 +136,13 @@ public class Hapus_Jadwal_Agenda extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }
