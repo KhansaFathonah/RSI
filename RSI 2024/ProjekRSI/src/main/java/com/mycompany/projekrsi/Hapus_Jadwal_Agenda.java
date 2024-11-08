@@ -4,6 +4,8 @@
  */
 package com.mycompany.projekrsi;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Asus
@@ -33,6 +35,7 @@ public class Hapus_Jadwal_Agenda extends javax.swing.JFrame {
         jTextField2 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jComboBox2 = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -50,7 +53,7 @@ public class Hapus_Jadwal_Agenda extends javax.swing.JFrame {
 
         jLabel7.setFont(new java.awt.Font("Century Schoolbook", 1, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel7.setText("Waktu                                : ");
+        jLabel7.setText("Waktu Agenda                 :");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 260, -1, -1));
 
         jTextField1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
@@ -84,6 +87,16 @@ public class Hapus_Jadwal_Agenda extends javax.swing.JFrame {
         jButton2.setText("BATAL");
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 440, 120, -1));
 
+        jComboBox2.setBackground(new java.awt.Color(0, 0, 0));
+        jComboBox2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih Tanggal ", "Senin ", "Selasa ", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu", " ", " " }));
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 310, 510, -1));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/mycompany/Image/Frame Hapus Jadwal Agenda.png"))); // NOI18N
         jLabel1.setText("Baground");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, -1));
@@ -98,6 +111,12 @@ public class Hapus_Jadwal_Agenda extends javax.swing.JFrame {
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+        // TODO add your handling code here:
+        String selectedItem = (String) jComboBox2.getSelectedItem();
+        JOptionPane.showMessageDialog(this, "Anda memilih pengeluaran: " + selectedItem);
+    }//GEN-LAST:event_jComboBox2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -138,6 +157,7 @@ public class Hapus_Jadwal_Agenda extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
